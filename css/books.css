@@ -30,6 +30,13 @@ h1 {
     color :green;
 }
 
+h6 {
+    margin : 0 0 10px ;
+    font-size: 20px;
+    font-weight:lighter;
+    color :grey;
+}
+
 input {
     display: inline;
     width: inherit;
@@ -76,6 +83,22 @@ input {
 }
 
 .btn:hover{
+    background-color: green;
+}
+
+.largebtn {
+    background-color: forestgreen;
+    color: white;
+    width : 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.largebtn:hover{
     background-color: green;
 }
 

@@ -7,7 +7,7 @@
     </head>
     <body>
         <p><a href="index.html">Index</a></p>
-        <h1>List of users</h1>
+        <h1>List of books</h1>
         <table>
             <tr>
                 <th>book#</th>
@@ -17,28 +17,27 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>Rémi</td>
-                <td>Boutroux</td>
-                <td>2001-05-31</td>
+                <td>Les passagers du vent</td>
+                <td>François Bourgeon</td>
                 <td>
                     <form action="editBook" method="POST">
-                        <button type="submit" formaction="index.html">
-                            <img src="img/crayon.png" alt="edit user" class="icon" />
+                        <button type="submit" formaction="book.html">
+                            <img src="img/crayon.png" alt="edit book" class="icon" />
                         </button>
                     </form>
                     <form action="deleteBook" method="POST">
                         <button type="submit" formaction="index.html">
-                            <img src="img/poubelle.png" alt="delete user" class="icon" />
+                            <img src="img/poubelle.png" alt="delete book" class="icon" />
                         </button>
                     </form>
             </tr>
 
             <tr>
-                <td colspan="4"></td>
+                <td colspan="3"></td>
                 <td>
                     <form action="addBook" method="POST">
                         <button type="submit" formaction="index.html">
-                            <img src="img/plus.png" alt="add user" class="icon" />
+                            <img src="img/plus.png" alt="add book" class="icon" />
                         </button>
                     </form>
                 </td>
