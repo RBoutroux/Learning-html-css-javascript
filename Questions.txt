@@ -1,0 +1,41 @@
+What is the link tag used for?
+For switching to another html page.
+
+in the URL bar, why do we use http ://.... or file ://... or https ://...
+Ca permet de définir le protocole. 
+
+What is the difference between file and http protocols?
+The difference between the 2 methods is the way you access the file.
+• When you open the file, that means you use the “file” protocol. You take the file
+on your disk and you directly open it. You do not use any web server.
+• When you use the URL in your browser, that means you use the “http” protocol.
+You launch a request to the web server (even if currently this is the one on your computer), this
+server load the requested file and send it back to the browser.
+http utilise un serveur local pour ouvrir le fichier, alors que le protocole file ouvre directement le fichier dans le navigateur sans passer par un serveur. 
+
+How do you define a formular? What is it used for?
+<form action="http://dr-ser-info.ec-nantes.fr/prweb/test.php" method="POST">
+You define it by using the form tag followed by the type of action and the type of method used(GET or POST).
+The “action” attribute tells which action is called when the form is submitted.
+It is used to get information from the user. 
+
+Why should you prefer using CSS files instead of inserting CSS commands in HTML files?
+Using a css file allows you to define the css for all files including it and not just one html file. 
+
+How do you name an interactive element (in a input tag for example) in a form?
+<input type"..." >
+
+What is the difference between a textarea and an input type text element?
+A textarea allows the text to be on multiple lines. 
+
+What is the difference between GET and POST methods?
+GET : Informations dans l’URL
+Le GET peut juste récupérer des infos. 
+POST : Informations dans le protocole
+Le POST peut récupérer des infos mais aussi modifier des infos sur le serveur. (?)
+
+How do you connect a radio button or a checkbox button to its associated text?
+You use a label. 
+Example : 
+<input type="checkbox" name="myChoice" id="choicebtn" value="1"/>
+    <label for="choicebtn">Check the button</label>

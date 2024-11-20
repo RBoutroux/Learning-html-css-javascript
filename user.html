@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head>
+        <title>Hello World </title>
+        <meta charset="utf-8">
+        <link href="css/books.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <p><a href="index.html">Index</a></p>
+        <h1>List of users</h1>
+        <form action="editBook" method="POST">
+            <table>
+                <tr>
+                    <th>user#</th>
+                    <td>
+                        1
+                    </td>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <td>
+                        <input type="text" name="firstName" value="" placeholder="user first name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>
+                        <input type="text" name="lastName" value="" placeholder="user last name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Birthdate</th>
+                    <td>
+                        <input type="date" name="birthdate" value="" placeholder="user birthdate">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" formaction="users.html" class="btn">Save
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

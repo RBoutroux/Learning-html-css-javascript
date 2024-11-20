@@ -1,0 +1,28 @@
+body{
+    background-color :aqua;
+}
+
+/* p{
+    margin : 5px 0;
+    color: red;
+} */
+
+a,a :focus{
+    color: blue !important;
+    text-decoration: none;
+}
+
+a :hover{
+    color: purple !important;
+    text-decoration: underline;
+}
+
+#error2 {
+    color: green;
+    font-weight: bold;
+}
+
+.error1{
+    color: red;
+    font-weight: bold;
+}

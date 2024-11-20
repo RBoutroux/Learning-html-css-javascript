@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head>
+        <title>Hello World </title>
+        <meta charset="utf-8">
+        <link href="hello.css" type="text/css" rel="stylesheet"/>
+        <link href="css/myCSSFile.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <p><a href="hello.html">Hello</a> World</p>
+        <h1>This is my form</h1>
+        <form action="http://dr-ser-info.ec-nantes.fr/prweb/test.php" method="POST">
+            <p>Give your login<br/>
+                <input type="text" name="myLogin" value="" placeholder="your name"/><br/>
+            </p>
+            <p>
+                Give your password<br/>
+                <input type="password" name="myPassword" value="" placeholder="your password"/><br/>
+            </p>
+            <p>
+                Select your specialty<br/>
+                <select name="mySpecialty">
+                    <option value="-1"selected="selected">-</option>
+                    <option value="1">INFO</option>
+                    <option value="2">RV</option>
+                </select>
+            </p>
+            <p>
+                Select your status<br/>
+                <input type="radio" name="myStatus" id="status1" value="1"/>
+                    <label for="status1">Teacher</label><br/>
+                <input type="radio" name="myStatus" id="status2" value="2"/><label for="status2">Student</label>
+            </p>
+            <p>
+                <input type="checkbox" name="myChoice" id="choicebtn" value="1"/>
+                    <label for="choicebtn">Check the button</label>
+            </p>
+            <p>
+                <button>Valid form</button>
+            </p>
+        </form>
+    </body>
+</html>

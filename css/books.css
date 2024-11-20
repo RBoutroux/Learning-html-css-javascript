@@ -1,0 +1,102 @@
+body{
+    background-color :whitesmoke;
+}
+
+table {
+    border : 1px solid green;
+    color :forestgreen;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    color :forestgreen;
+}
+
+td {
+    border : 1px solid green;
+    color :forestgreen;
+}
+
+th {
+    background-color: yellowgreen;
+    color :white;
+}
+
+h1 {
+    margin : 0 0 10px ;
+    font-size: 25px;
+    font-weight: bold;
+    color :green;
+}
+
+input {
+    display: inline;
+    width: inherit;
+    padding: 2px;
+    background: rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 14px;
+    & :invalid :not(:focus) {
+        border-color: red;
+    }
+}
+
+.login-box{
+    text-align: center;
+    margin: 200px auto;
+    max-width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+}
+
+.btn{
+    background-color: forestgreen;
+    color: white;
+    width : inherit;
+    padding: 5px 70px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.text-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.icon{
+    font-size: 20px;
+    color: forestgreen;
+    margin: 0 auto;
+}
+
+img.icon {
+    display : inline;
+    height: 20px; /*icons are 20px height*/
+}
+
+form {
+    display: inline;/* to remove line breaks */
+}
+
