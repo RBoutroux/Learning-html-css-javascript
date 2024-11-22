@@ -1,0 +1,14 @@
+In Bootstrap, what is a container used for?
+A container is used to create a table. It is necessary to use the grid system. 
+Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container
+
+
+How large is a grid in terms of columns?
+12 columns. 
+
+How do you ensure a table is responsive?
+Use the table-responsive tag. 
+
+How do you place a background text in an input text element?
+You can use placeholder : 
+<input id="textfield" name="textfield" type="text" placeholder="enter something" />
