@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<style>
+    .icon-small {
+      width: 20px; /* Adjust the width as needed */
+      height: auto;
+    }
+  </style>
+<html lang="fr-fr">
+    <head>
+        <title>Borrow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="">List of books</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-striped border">
+                        <thead class="bg-success">
+                        <tr>
+                            <th scope="col" class="text-center">Date</th>
+                            <th scope="col" class="text-center">Title</th>
+                            <th scope="col" class="text-center">Return</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2021-04-26</td>
+                            <td>Les passagers du vent, Volume 1</td>
+                            <td>2021-07-01</td>
+                        </tr>
+                        <tr>
+                            <td>2021-04-26</td>
+                            <td>Les passagers du vent, Volume 2</td>
+                            <td class="text-center">
+                              <form action="returnBook" method="POST" class=" d-inline-block">
+                                <button name="edit" class="btn">
+                                    <img src="/PRWEB/img/return-arrow.png" alt="edit" class="icon img-fluid icon-small" />
+                                </button>
+                            </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr id="addNew">
+                                <td scope="col"></td>
+                                <form class="form" action="borrowBook" method="POST">
+                                <td>
+                                  <select name="book" class="form-select form-control">
+                                    <option value="-1" selected="selected">-</option>
+                                    <option value="1">Les passagers du vent, volume 1</option>
+                                    <option value="2">Les passagers du vent, volume 2</option>
+                                </select>
+                                </td>
+                                <td class="text-center">
+                                      <button name="add" class="btn">
+                                          <img src="/PRWEB/img/plus.png" alt="add" class="icon img-fluid icon-small" />
+                                      </button>
+                                </tr>
+                                </form>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
