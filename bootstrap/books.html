@@ -60,6 +60,20 @@
                                     <img src="../img/poubelle.png" alt="delete" class="icon img-fluid icon-small" />
                                 </button>
                         </tr>
+                        <tr id="1">
+                            <td scope="col">1</td>
+                            <td>Les passagers du vent, Volume 2</td>
+                            <td>Enki Bilal</td>
+                            <td class="text-center">
+                                <form action="editBook" method="POST" class=" d-inline-block">
+                                    <button name="edit" class="btn">
+                                        <img src="../img/crayon.png" alt="edit" class="icon img-fluid icon-small" />
+                                    </button>
+                                </form>
+                                <button name="delete" class="btn" onClick="deleteBook(1,this);return false;">
+                                    <img src="../img/poubelle.png" alt="delete" class="icon img-fluid icon-small" />
+                                </button>
+                        </tr>
                         </tbody>
                         <tfoot>
                             <tr id="addNew">

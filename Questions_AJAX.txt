@@ -1,0 +1,43 @@
+How can you get any element in the HTML page to change one of its properties?
+You can use javascript functions to change protperties in the HTML page. 
+
+What is the principle of an AJAX call?
+A browser can send requests to a web server. In that case, a web server’s response is an HTML file.
+Such an exchange leads to a page reloading, that scrolls the page to the top.
+Often, what we need is an exchange with the web server to update data. This doesn’t work with a
+standart HTTP exchange.
+Javascript is designed to interact with the page components. What we need is the javascript ability
+to directly exchange with the web server. This is the AJAX purpose.
+An AJAX call doesn't reload the page. You ask for data from the server and when you receive it you modify the HTML accordingly. 
+We have to take into account some constraints :
+• Server is listening for an HTTP request.
+• HTTP requests are either GET or POST requests.
+• For security reasons, Javascript cannot send a request to any server. It can only call a script on
+the same server as the page it is executed in
+• Javascript does not need an HTML response, only data to modify the current page.
+That means Javascript/AJAX requests have to respect the HTTP protocol. To manage the exchange,
+AJAX uses an xmlHttpRequest object.
+As AJAX does not need an HTML response, but data to modify the current page. That means the web
+server response might not be an HTML page but a data set. Response can be send using 3 formats :
+text, XML and JSON
+Here is the sequence of an AJAX call :
+• a Javascript function is called. It requires data from the web server to complete.
+• the Javascript function collect data in the page and prepares an AJAX call.
+• the Javascript function sends a request to the server through the AJAX call. The request refers
+to a script that might be executed on the web server.
+• the server execute the requested script with data sent through the AJAAX call. It is the same
+process as a standart HTTP call.
+• The script on the server produces a response as a set of data to send back to the javascript
+function.
+• web server send produced data back to the javascript function
+• the Javascript function gets the response and extracts requested data
+• the Javascript function uses data to alter the current page.
+
+Can I call any script on any server with AJAX? What are AJAX restrictions?
+• Server is listening for an HTTP request.
+• HTTP requests are either GET or POST requests.
+• For security reasons, Javascript cannot send a request to any server. It can only call a script on
+the same server as the page it is executed in
+• Javascript does not need an HTML response, only data to modify the current page
+Javascript can only call a script on the same server as the page it is executed in. 
+You also need to wait for the response, either using synchronous or asynchronous behaviour. 
