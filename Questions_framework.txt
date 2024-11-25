@@ -1,0 +1,29 @@
+Questions
+When a browser send a request to a MVC based application, which module does what?
+Le Model représente les données utilisées dans l'application. 
+La View représente les écrans affihcés à l'utilisateur. Ce sont des templates remplis avec les données à envoyer à l'utilisateur. 
+Ils incluent les mécanismes permettant de rentrer les données dans les fameux templates. 
+Le Controller fait le lien entre utilisateur et application. Quand l'application envoie une requête elle est reçue par le Controller. 
+Il définit les informations recquises, interagit avec le Model pour obtenir les données puis définies la meilleure View. 
+Enfin il renvoie la View à l'utilisateur. 
+
+Why can’t you have 2 same routes in an application?
+In a web application, having two identical routes can cause ambiguity and conflicts in routing logic. Here are the main reasons why you can't have two same routes:
+Ambiguity: The server or client-side router wouldn't know which route handler to execute when a request is made to that route.
+Conflicts: It can lead to unexpected behavior, as the routing mechanism might randomly pick one of the handlers or always pick the first one defined, ignoring the second.
+Maintenance: It makes the codebase harder to maintain and debug, as developers might not be sure which route is being executed.
+Globalement ça doit pas être ouf pour la sécurité peut-être. 
+
+What are entities and repository used for? Why is there a repository for each managed entity?
+Les entités servent à avoir une correspondance avec les tables dans le programme. 
+Les repositories servent à manipuler les entités en utilisant des méthodes CRUD. 
+Un des principaux intérêts est de ne pas avoir à écrire les requêtes sql à chaque fois. 
+
+
+What is the role of an ORM?
+Object Relational Mapping
+Il sert de lien entre les bases de données et les objets dans le framework. 
+
+Why are there some tables that are not implemented as Items?
+Les tables servant de lien entre tables ne sont pas en général pas implémentées. 
+Ca semble logique puisque l'application n'a pas besoin de communiquer directement avec elles. 
