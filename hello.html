@@ -5,8 +5,20 @@
         <meta charset="utf-8">
         <link href="hello.css" type="text/css" rel="stylesheet"/>
         <link href="css/myCSSFile.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="js/myScript.js"></script>
     </head>
     <body>
         <p><a href="table.html">Hello</a> World</p>
+        <script type="text/javascript">
+            writeText();
+        </script>
+        <p>
+            <span onmouseover="writeText2();">Hello</span> World
+        </p>
+        <p>
+            <span id="mytext" onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, 'red')">
+                Hello 
+            </span>World
+        </p>
     </body>
 </html>
