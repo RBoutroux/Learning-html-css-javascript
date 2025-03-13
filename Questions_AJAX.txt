@@ -25,7 +25,7 @@ Here is the sequence of an AJAX call :
 • the Javascript function collect data in the page and prepares an AJAX call.
 • the Javascript function sends a request to the server through the AJAX call. The request refers
 to a script that might be executed on the web server.
-• the server execute the requested script with data sent through the AJAAX call. It is the same
+• the server execute the requested script with data sent through the AJAX call. It is the same
 process as a standart HTTP call.
 • The script on the server produces a response as a set of data to send back to the javascript
 function.
